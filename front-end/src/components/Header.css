@@ -1,0 +1,21 @@
+
+.header-nav {
+    height: 100px;
+    background-color: #e0250c;
+    margin-bottom: 30px;
+    border-bottom: 1px black;
+    box-shadow: 20 black;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
