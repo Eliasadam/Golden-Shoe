@@ -1,19 +1,26 @@
 import React from 'react';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import SearchIcon from '@material-ui/icons/Search';
+import TextField from '@material-ui/core/TextField';
 
-const SearchComponent = () => {
-    const value = {};
-    return (
-        <form className="searchForm">
-            <label htmlFor="Search by">
-                <input id="search" value={value} placeholder="e.g Trainers ..."></input>
-            </label>
-            <label htmlFor="Search by">
-                <input id="search" value={value} placeholder="e.g Trainers ..."></input>
-            </label>
-            <button type="submit"> Search </button>
-
-        </form>
-    );
+const SearchComponent = ({ search, HandleChange }) => {
+  return (
+    <div className="searchForm">
+      <TextField
+        variant="outlined"
+        value={search}
+        placeholder="e.g Trainers ..."
+        onChange={HandleChange}
+        InputProps={{
+          endAdornment: (
+            <InputAdornment>
+              <SearchIcon />
+            </InputAdornment>
+          ),
+        }}
+      />
+    </div>
+  );
 };
 
 export default SearchComponent;

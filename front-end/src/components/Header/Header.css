@@ -1,16 +1,17 @@
 
 .header-nav {
+    display: flex;
     height: 100px;
     background-color: #e0250c;
     margin-bottom: 30px;
     border-bottom: 1px black;
     box-shadow: 20 black;
+    align-items: center;
 }
 ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 60px;
+  justify-content: flex-end;
 }
 
 li {
@@ -18,4 +19,5 @@ li {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  margin-right: 2rem;
 }
