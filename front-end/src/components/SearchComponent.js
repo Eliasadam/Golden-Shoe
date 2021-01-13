@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import SearchIcon from '@material-ui/icons/Search';
-// import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-
 
 const SearchWrapper = styled.div`
 display: flex;
@@ -19,13 +17,8 @@ border-radius: 10px;
 const SearchInput = styled.input`
 border-color: white;
 outline: none;
+border: none;
 border-radius: 10px 0 0 10px;
-&:hover {
-  border-width: none;
-}
-&:focus {
-  outline: none;
-}
 
 `;
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchComponent from '../SearchComponent';
+import ShoppingBasket from './ShoppingBasket';
 import './Header.css';
 
 const Header = ({ query, HandleChange }) => {
@@ -13,6 +14,7 @@ const Header = ({ query, HandleChange }) => {
     <div className="header-nav">
       <ul>{navBarList}</ul>
       <SearchComponent query={query} HandleChange={HandleChange} />
+      <ShoppingBasket/>
     </div>
   );
 };
