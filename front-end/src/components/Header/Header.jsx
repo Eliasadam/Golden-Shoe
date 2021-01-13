@@ -1,8 +1,10 @@
 import React from 'react';
 import SearchComponent from '../SearchComponent';
+import ShoppingBasket from './ShoppingBasket';
 import './Header.css';
 
-const Header = ({ navList, query, HandleChange }) => {
+const Header = ({ query, HandleChange }) => {
+  const navList = ['New Release ', 'Men', 'Women', 'Unisex', 'Kids', 'Sale'];
   
   const navBarList = navList.map((val, index) => {
     const uniqueKey = `${val}${index}`;
@@ -12,6 +14,7 @@ const Header = ({ navList, query, HandleChange }) => {
     <div className="header-nav">
       <ul>{navBarList}</ul>
       <SearchComponent query={query} HandleChange={HandleChange} />
+      <ShoppingBasket/>
     </div>
   );
 };
