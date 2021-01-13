@@ -2,7 +2,8 @@ import React from 'react';
 import SearchComponent from '../SearchComponent';
 import './Header.css';
 
-const Header = ({ navList, query, HandleChange }) => {
+const Header = ({ query, HandleChange }) => {
+  const navList = ['New Release ', 'Men', 'Women', 'Unisex', 'Kids', 'Sale'];
   
   const navBarList = navList.map((val, index) => {
     const uniqueKey = `${val}${index}`;

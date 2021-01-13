@@ -19,12 +19,12 @@ const App = () => {
     setSearch(event.target.value);
   };
 
-  const navList = ['New Release ', 'Men', 'Women', 'Unisex', 'Kids', 'Sale'];
+  
 
 
   return (
-    <div className="App">
-      <Header navList={navList}
+    <div className="App" data-testid="app">
+      <Header
         search={search}
         HandleChange={HandleChange}
       />
