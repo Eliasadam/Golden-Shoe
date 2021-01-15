@@ -34,7 +34,6 @@ const SearchComponent = ({ search, HandleChange }) => {
           onChange={HandleChange}/>
         <SearchIcon size={5}/>
       </SearchWrapper>
-      {/* <ShoppingCartIcon color="white"/> */}
     </div>
     
   );

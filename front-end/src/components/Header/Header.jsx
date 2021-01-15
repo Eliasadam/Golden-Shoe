@@ -1,21 +1,21 @@
 import React from 'react';
 import SearchComponent from '../SearchComponent';
 import ShoppingBasket from './ShoppingBasket';
-import './Header.css';
+import { HeaderNav, HeaderUl, HeaderList } from './HeaderStyle';
 
 const Header = ({ query, HandleChange }) => {
   const navList = ['New Release ', 'Men', 'Women', 'Unisex', 'Kids', 'Sale'];
   
   const navBarList = navList.map((val, index) => {
     const uniqueKey = `${val}${index}`;
-    return <li key={uniqueKey}>{val}</li>;
+    return <HeaderList key={uniqueKey}>{val}</HeaderList>;
   });
   return (
-    <div className="header-nav">
-      <ul>{navBarList}</ul>
+    <HeaderNav className="header-nav">
+      <HeaderUl>{navBarList}</HeaderUl>
       <SearchComponent query={query} HandleChange={HandleChange} />
       <ShoppingBasket/>
-    </div>
+    </HeaderNav>
   );
 };
 

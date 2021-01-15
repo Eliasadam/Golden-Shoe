@@ -1,5 +1,6 @@
+import styled from 'styled-components';
 
-.header-nav {
+export const HeaderNav = styled.div`
     display: flex;
     height: 100px;
     background-color: #2e2c2c;
@@ -7,17 +8,18 @@
     border-bottom: 1px black;
     box-shadow: 20 black;
     align-items: center;
-}
-ul {
+
+`;
+
+export const HeaderUl = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-}
-
-li {
+`;
+export const HeaderList = styled.ul`
   list-style-type: none;
   text-decoration: none;
   color: white;
   font-weight: bold;
   margin-right: 2rem;
-}
+`;
