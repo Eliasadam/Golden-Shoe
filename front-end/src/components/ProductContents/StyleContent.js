@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CardWrapper = styled.div`
+export const ContentWrapper = styled.div`
   display: block;
   flex: 1;
   box-shadow: 0 4px 6px #0d506a;
@@ -12,7 +12,7 @@ export const CardWrapper = styled.div`
   margin: 1rem;
   padding: 0.5rem;
 `;
-export const CardList = styled.div`
+export const ContentList = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,13 +21,13 @@ export const CardList = styled.div`
   justify-content: space-between;
   margin: 0.5rem;
 `;
-export const CardTitle = styled.p`
+export const ProductTitle = styled.p`
   font-size: 12px;
   align-self: center;
   margin: 1rem;
   text-align: center;
 `;
-export const CardImg = styled.img`
+export const ProductImg = styled.img`
   width: 150px;
   height: 150px;
   margin: 0.5rem;

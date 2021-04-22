@@ -14,12 +14,12 @@ export const HeaderNav = styled.div`
 export const HeaderUl = styled.ul`
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  // justify-content: flex-end;
 `;
-export const HeaderList = styled.ul`
+export const HeaderList = styled.li`
   list-style-type: none;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  margin-right: 2rem;
+  margin-right: 0.8rem;
 `;

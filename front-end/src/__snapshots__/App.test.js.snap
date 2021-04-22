@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`This suit is to test the App component Snapshot of App 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+    data-testid="app"
+  >
+    <div
+      class="sc-hKgILt iuOOhe header-nav"
+    >
+      <ul
+        class="sc-eCssSg frQhIs"
+      >
+        <ul
+          class="sc-jSgupP jSfKvH"
+        >
+          New Release 
+        </ul>
+        <ul
+          class="sc-jSgupP jSfKvH"
+        >
+          Men
+        </ul>
+        <ul
+          class="sc-jSgupP jSfKvH"
+        >
+          Women
+        </ul>
+        <ul
+          class="sc-jSgupP jSfKvH"
+        >
+          Unisex
+        </ul>
+        <ul
+          class="sc-jSgupP jSfKvH"
+        >
+          Kids
+        </ul>
+        <ul
+          class="sc-jSgupP jSfKvH"
+        >
+          Sale
+        </ul>
+      </ul>
+      <div>
+        <div
+          class="sc-bdfBwQ gmxcxW"
+        >
+          <input
+            class="sc-gsTCUz gxndHy"
+            placeholder="e.g Trainers ..."
+            value=""
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            size="5"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root sc-dlfnbm jlbTAU"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      data-testid="card"
+    >
+      <div>
+        <img
+          src="https://www.upsieutoc.com/images/2020/06/27/img1.jpg"
+        />
+        <p>
+          Nike Shoes
+        </p>
+        <p>
+           Colour: 4
+        </p>
+        <p>
+          £23
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://www.upsieutoc.com/images/2020/06/27/img2.jpg"
+        />
+        <p>
+          Nike Air Forces 01
+        </p>
+        <p>
+           Colour: 3
+        </p>
+        <p>
+          £19
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://www.upsieutoc.com/images/2020/06/27/img3.jpg"
+        />
+        <p>
+          Nike Balance
+        </p>
+        <p>
+           Colour: 4
+        </p>
+        <p>
+          £50
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://www.upsieutoc.com/images/2020/06/27/img4.jpg"
+        />
+        <p>
+          Nike Leather Shoe
+        </p>
+        <p>
+           Colour: 4
+        </p>
+        <p>
+          £15
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://www.upsieutoc.com/images/2020/06/27/img5.jpg"
+        />
+        <p>
+          Nike Jordan
+        </p>
+        <p>
+           Colour: 4
+        </p>
+        <p>
+          £10
+        </p>
+      </div>
+      <div>
+        <img
+          src="https://www.upsieutoc.com/images/2020/06/27/img6.jpg"
+        />
+        <p>
+          Nike Slipper
+        </p>
+        <p>
+           Colour: 4
+        </p>
+        <p>
+          £17
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

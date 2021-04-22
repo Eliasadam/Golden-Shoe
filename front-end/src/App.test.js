@@ -12,6 +12,6 @@ describe('This suit is to test the App component', () => {
   });
   test("finding title with TestId", () => {
     const { getByTestId } = render(<App title="" />);
-    expect(getByTestId("app")).toHaveTextContent(0);
+    expect(getByTestId("app")).toHaveTextContent(10);
   });
 });

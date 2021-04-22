@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ContentList, ProductImg, ProductTitle } from './StyleContent';
+import { GlobalContext } from '../../Contexts/GlobalState';
 
-const ProductContents = ({ query }) => {
+const ProductContents = () => {
+  const { query } = useContext(GlobalContext);
   return (
-    <div>
-      {query.map((product, index) => {
+    <div data-testid="card">
+      {query? query.map((product, index) => {
         const uniqueKey = `${product}${index}`;
         return (
-          <div key={uniqueKey}>
-            <img src={product.src} />
-            <p>{product.title}</p>
-            <p> Colour: {product.colors.length}</p>
-            <p>£{product.price}</p>
-          </div>
+          <ContentList key={uniqueKey} >
+            <ProductImg src={product.src} />
+            <ProductTitle>{product.title}</ProductTitle>
+            <ProductTitle> Colour: {product.colors.length}</ProductTitle>
+            <ProductTitle>£{product.price}</ProductTitle>
+          </ContentList>
         );
-      })}
+      }): []}
     </div>
   );
 };

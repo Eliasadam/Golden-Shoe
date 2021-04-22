@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`This suit is to test the ProductContents component Snapshot of ProductContents 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="card"
+  />
+</DocumentFragment>
+`;
