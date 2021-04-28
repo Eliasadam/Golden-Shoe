@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
 
 export const HeaderNav = styled.div`
     display: flex;
@@ -18,6 +20,13 @@ export const HeaderUl = styled.ul`
 `;
 export const HeaderList = styled.li`
   list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-right: 0.8rem;
+`;
+export const AnchorItem = styled(Link)`
+list-style-type: none;
   text-decoration: none;
   color: white;
   font-weight: bold;

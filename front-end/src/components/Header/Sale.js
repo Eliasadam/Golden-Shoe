@@ -1,18 +1,35 @@
 import React, {useContext} from 'react';
-import { HeaderList } from './HeaderStyle';
+import { ContentList, ProductImg, ProductTitle, ContentWrapper } from '../ProductContents/StyleContent';
 import { GlobalContext } from '../../Contexts/GlobalState';
 
 const Sale = () => {
-    const { clicked, query, setQuery, setClicked } = useContext(GlobalContext);
-    const saleHandleChange = (e) => {
-        const filterOnSale = query ? query.filter(items => items.sale) : [];
-        console.log(filterOnSale);
-        setQuery(filterOnSale);
+    const {
+        query,
+    } = useContext(GlobalContext);
 
-        setClicked(e.target.value);
-    };
+    
+        const filteredProduct = query? 
+            query.filter((items) => items.sale) : [];
+        console.log(filteredProduct);
+  
+   
     return (
-         <HeaderList type="submit" value={clicked} onClick={saleHandleChange}>Sale</HeaderList>   
+        
+        <ContentWrapper data-testid="card">
+      {filteredProduct? filteredProduct.map((product, index) => {
+        const uniqueKey = `${product}${index}`;
+        return (
+          <ContentList key={uniqueKey} >
+            <ProductImg src={product.src} />
+            <ProductTitle>{product.title}</ProductTitle>
+            <ProductTitle> Colour: {product.colors.length}</ProductTitle>
+            <ProductTitle>£{product.price}</ProductTitle>
+          </ContentList>
+        );
+      }): []}
+    </ContentWrapper>
+            
+       
     );
 };
 

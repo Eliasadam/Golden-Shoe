@@ -1,35 +1,32 @@
 import styled from 'styled-components';
 
 export const ContentWrapper = styled.div`
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   flex: 1;
-  box-shadow: 0 4px 6px #0d506a;
-  background-color: #f3feef;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 260px;
-  width: 220px;
-  margin: 1rem;
-  padding: 0.5rem;
+  margin: 0.1rem;
+  padding: 0.1rem;
 `;
 export const ContentList = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0.5rem;
+  margin: 0.3rem;
+  width: 400px;
 `;
 export const ProductTitle = styled.p`
-  font-size: 12px;
+  font-size: 16px;
   align-self: center;
-  margin: 1rem;
+  margin: 5px;
   text-align: center;
+  font-weight: bold;
 `;
 export const ProductImg = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 350px;
+  height: 350px;
   margin: 0.5rem;
   border-radius: 0.2rem;
 `;

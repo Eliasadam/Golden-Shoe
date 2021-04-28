@@ -5,6 +5,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 const ShoppingCart = styled(ShoppingCartIcon)`
 display: flex;
 color: white;
+align-self: flex-end;
 
 `;
 const ShoppingBasket = () => {
